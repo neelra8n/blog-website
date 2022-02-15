@@ -80,11 +80,10 @@ const Createview = () =>{
 
                 const image = await uploadFile(data);
                 post.picture = image.data;
-                console.log(image.data);
             }
         }
         getImageData();
-    } ,[file])
+    } ,[file, post])
 
     const savePost = async () => {
         await createPost(post);

@@ -82,11 +82,10 @@ const UpdateView = () =>{
 
                 const image = await uploadFile(data);
                 post.picture = image.data;
-                console.log(image.data);
             }
         }
         getImageData();
-    } ,[file])
+    } ,[file, post])
 
 
 

@@ -26,7 +26,7 @@ function App() {
               <Route path= '/ghumakkad-blog/create' element={<Createview />} />
               <Route path= '/ghumakkad-blog/update/:id' element={<UpdateView />} />
               <Route path='/ghumakkad-blog/404' element = {<NotFound />} />
-              <Route path='*' element= {<Navigate replace to='/ghumakkad-blog/404' />} />
+              <Route path='*' element= {<Navigate replace to='/ghumakkad-blog/' />} />
           </Routes>
       </div>
   );
